@@ -34,15 +34,17 @@ let productBin = {
     ]
 }
 
-function sumQuantity2(dataProduct) {
+//function menghitung jumlah quantity dari data
+function sumQuantity(dataProduct) {
     let totalQuantity = 0;
-    for (const product of dataProduct) {
-        if (product.productCode == "FBR00040101") {
+    for (const product of dataProduct) { //perulangan untuk mengecek product code dan menghitung jumlah dari quantity
+        if (product.productCode == "FBR00040101") { //kondisi jika data productCode FBR00040101
             totalQuantity += product.quantity;
         }
     }
     return totalQuantity;
 }
 
-const totalQuantity2 = sumQuantity2(productBin.data)
-console.info(totalQuantity2)
+//memanggil fungsi penjumlahan
+const ResultTotalQuantity = sumQuantity(productBin.data)
+console.info(ResultTotalQuantity)
