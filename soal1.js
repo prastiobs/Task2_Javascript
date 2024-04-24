@@ -19,7 +19,6 @@ function calculateSqrt() {
             var squareRoot = Math.sqrt(number); //menghitung akar dari inputan angka
             console.log("Akar dari " + number + " adalah : " + squareRoot); //output hasil
         }
-        // Close the interface
         rl.close();
     });
 }
